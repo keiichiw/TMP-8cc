@@ -1,0 +1,24 @@
+R"(x86
+	.text
+main:
+	mov D, SP
+	add D, -1
+	store BP, D
+	mov SP, D
+	mov BP, SP
+	.file 1 "-"
+	.loc 1 5 0
+	.loc 1 4 0
+	mov A, 88
+	mov D, SP
+	add D, -1
+	store A, D
+	mov SP, D
+	putc A
+	add SP, 1
+	.loc 1 5 0
+	mov A, 0
+	mov B, A
+	exit
+	exit
+)"
